@@ -18,8 +18,8 @@ class BookFactory extends Factory
     {
         return [
             'isbn' => $this->faker->ean13(),
-            'author_full_name' => $this->faker->name,
             'title' => $this->faker->text('100'),
+            'price' => $this->faker->randomDigit(),
             'year' => $this->faker->year,
         ];
     }
